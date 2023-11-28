@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            
+        }
+        #main{
+            display: flex;
+            flex: 1;
+        
+        }
+        #main>nav{
+            background: pink;
+            order: 1;
+            height: 50vh;
+            width: 15vw;
+            
+            
+        }
+        #main>article{            
+            flex: 1;
+            order: 2;
+            height: 50vh;
+            width: 15vw;
+            
+        }
+        #main>aside{
+            background: #03dac5;
+            order: 3;
+            height: 50vh;
+            width: 15vw;
+
+        }
+        header,footer{
+            background: khaki;
+            height: 20vh;
+        }
+        header,footer,nav,article,aside{
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div id="main">
+        <nav>Nav</nav>
+        <article>Article</article>
+        <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
