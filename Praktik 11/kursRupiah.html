@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menhitung Kurs Rupiah</title>
+</head>
+<body>
+    <h1>Menghitung Kurs Rupiah</h1>
+    <div>
+        <label for="Rupiah">Jumlah Rupiah</label>
+        <input type="number" id="Rupiah" onchange="MenghitungDolar()">
+    </div>
+    <div>
+        <label for="Dolar">Jumlah Dolar</label>
+        <span id="Dolar">0/span>
+    </div>
+
+    <script>
+        const kursDolar = 14650;
+        
+
+        function MenghitungDolar() {
+            let jumlahRupiah = document.getElementById("Rupiah").value;
+            let jumlahDolar = parseFloat (jumlahRupiah) / kursDolar
+            document.getElementById("Dolar").innerText = jumlahDolar.toFixed(2);
+        }
+    </script>
+</body>
+</html>
