@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <form id="myForm" onsubmit="validation(); return false;">
+        <form id="myForm" onsubmit="validasi(); return false;">
             <label for="namapelanggan">Nama Pelanggan</label>
             <input type="text" id="namapelanggan" name="namapelanggan" maxlength="30" required>
 
@@ -35,7 +35,7 @@
                 <option value="10">10</option>
             </select>
             <br>
-            <button type="submit" onclick="validation()">submit</button>
+            <button type="submit" onclick="validasi()">submit</button>
         </form>
         <div id="result"></div>
     </div>
@@ -43,7 +43,7 @@
 
     
     <script>
-        function validation () {
+        function validasi () {
             let namapelanggan = document.getElementById("namapelanggan").value;
             let email = document.getElementById("email").value;
             let jamkeberangkatan = document.getElementById("jamkeberangkatan").value;
